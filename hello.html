@@ -4,7 +4,12 @@
         <title>Hello!</title>
         <script>
             function hello() {
-                document.querySelector('h1').innerHTML = 'Goodbye!';
+                const heading = document.querySelector('h2');
+                if (heading.innerHTML == 'Hello!') {
+                    heading.innerHTML = 'Goodbye!';
+                } else {
+                    heading.innerHTML = 'Hello!';
+                }
             }
         </script>
         <style>
@@ -17,6 +22,5 @@
         <h1>Welcome to my website!!</h1>
         <button onclick="hello()">Click here</button>
         <h2>Hello!</h2>
-        Hello again! 
     </body>
 </html>
